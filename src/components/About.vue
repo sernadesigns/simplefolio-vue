@@ -9,7 +9,7 @@
 			</h2>
 			
 			<b-row class="about-wrapper">
-				<b-col col md="6" sm="12">
+				<b-col md="6" sm="12">
 					<div
 						class="about-wrapper__image"
 						v-scroll-reveal="{ distance: '30px', duration: 1000 }"
@@ -28,7 +28,7 @@
 						<!-- /END Profile image -->
 					</div>
 				</b-col>
-				<b-col col md="6" sm="12">
+				<b-col md="6" sm="12">
 					<div
 						class="about-wrapper__info"
 						v-scroll-reveal="{ distance: '30px', duration: 1000, delay: 300, origin: leftToBottom }"

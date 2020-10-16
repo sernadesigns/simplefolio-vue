@@ -12,7 +12,7 @@
 
 				<!-- Each .row is a project block -->
 				<b-row v-for="project in Projects" :key="project.id">
-					<b-col col lg="4" sm="12">
+					<b-col lg="4" sm="12">
 						<div
 							class="project-wrapper__text"
 							v-scroll-reveal="{ distance: '30px', duration: 1000, delay: 500, origin: leftToBottom }"
@@ -38,7 +38,7 @@
 							</a>
 						</div>
 					</b-col>
-					<b-col col lg="8" sm="12">
+					<b-col lg="8" sm="12">
 						<div
 							class="project-wrapper__image"
 							v-scroll-reveal="{ distance: '30px', duration: 1000, delay: 1000, origin: rightToBottom }"
