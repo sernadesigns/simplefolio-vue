@@ -16,7 +16,6 @@ module.exports = {
 					keywords,
 					description
 				}
-				console.log('args', args);
 				return args;
 			})
 	}
