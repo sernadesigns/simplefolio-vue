@@ -8,6 +8,8 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { MediaQueries, CommonBands } from 'vue-media-queries';
 import VueScrollReveal from 'vue-scroll-reveal';
+import VueTilt from 'vue-tilt.js';
+import VueScrollTo from 'vue-scrollto';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
@@ -22,6 +24,11 @@ Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 Vue.use(mediaQueries);
 Vue.use(VueScrollReveal);
+Vue.use(VueTilt);
+Vue.use(VueScrollTo, {
+	duration: 1000,
+	easing: "easeInOutQuad",
+});
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 new Vue({

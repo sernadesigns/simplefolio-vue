@@ -16,7 +16,7 @@
 				class="hero-cta load-hidden"
 				v-scroll-reveal.reset="{ distance: '30px', duration: 1000, delay: 1000, origin: leftToBottom }"
 			>
-				<a class="cta-btn cta-btn--hero" href="#about">Know more</a> <!-- {{jumpscroll}} -->
+				<a class="cta-btn cta-btn--hero" href="#about" v-scroll-to="'#about'">Know more</a>
 			</p>
 		</b-container>
 	</b-jumbotron>

@@ -47,9 +47,7 @@
 							<a v-if="project.url" :href="project.url" rel="noopener noreferrer" target="_blank">
 								<div
 									class="thumbnail rounded"
-									max=7
-									glare=true
-									max-glare=0.5
+									v-tilt="{max: 7, glare: true, 'max-glare': 0.5}"
 								>
 									<!-- 2) project image path  -->
 									<b-img fluid :src="project.thumbnail.image" :alt="project.thumbnail.alt"></b-img>
@@ -57,9 +55,7 @@
 							</a>
 							<div v-else
 								class="thumbnail rounded"
-								max=7
-								glare=true
-								max-glare=0.5
+								v-tilt="{max: 7, glare: true, 'max-glare': 0.5}"
 							>
 								<!-- 2) project image path  -->
 								<b-img fluid :src="project.thumbnail.image" :alt="project.thumbnail.alt"></b-img>

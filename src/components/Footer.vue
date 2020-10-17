@@ -1,7 +1,7 @@
 <template>
 	<footer class="footer navbar-static-bottom">
 		<div class="container">
-			<a class="back-to-top" href="#top"> <!-- {{jumpscroll}} -->
+			<a class="back-to-top" href="#top" v-scroll-to="'#top'">
 				<span class="sr-only">Back to top</span>
 				<font-awesome-icon :icon="['fas', 'angle-up']" size="2x" />
 			</a>
@@ -112,7 +112,6 @@ export default {
 
 .back-to-top svg {
   color: $white-color;
-  margin: 1rem 0 $default-font-size;
 	transition: all 0.2s ease-in;
 	pointer-events: none;
 
